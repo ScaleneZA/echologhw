@@ -51,11 +51,11 @@
 #define LED_UPLOADING_ON_TIME 100
 #define LED_UPLOADING_OFF_TIME 100
 
-// SD Card Configuration
-#define SD_CS_PIN 10
-#define SD_MOSI_PIN 11
-#define SD_MISO_PIN 13
-#define SD_SCK_PIN 12
+// SD Card Configuration - XIAO ESP32S3 Sense specific pins
+#define SD_CS_PIN 21
+#define SD_MOSI_PIN 9
+#define SD_MISO_PIN 8
+#define SD_SCK_PIN 7
 #define SD_SPI_FREQ 4000000
 
 // File Management

@@ -14,6 +14,12 @@ bool connectToWiFi() {
   
   DEBUG_PRINTF("Connecting to WiFi: %s\n", WIFI_SSID);
   
+  // ESP32S3 specific WiFi initialization
+  WiFi.mode(WIFI_STA);
+  WiFi.disconnect();
+  delay(100);
+  
+  WiFi.mode(WIFI_STA);
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   
   unsigned long startTime = millis();
